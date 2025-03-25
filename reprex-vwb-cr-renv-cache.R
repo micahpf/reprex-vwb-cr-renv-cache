@@ -30,3 +30,8 @@ renv::init(bioconductor = TRUE)
 renv::paths$cache()
 renv::status()
 
+## Questions
+# 1) Can I create a renv cache in the controlled resource bucket? (i.e. does the above code work?)
+# 2) In a new R app within the same workspace, can I use `renv::restore()` to reinstall required packages from the CR bucket cache?
+# 3) In a new workspace, can I use this same CR bucket as a reference resource and `renv::restore()` the project libraries in a new R app?
+# 4) After Step 3, can I update the cache with new contents via the reference resource?
