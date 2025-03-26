@@ -3,7 +3,7 @@
 
 ## Set up controlled resource bucket and mount it
 # Create controlled resource
-system("wb resource resolve --name renv-cache-2 || wb resource create gcs-bucket --name=renv-cache-2 --cloning=COPY_NOTHING --description='Bucket for caching R package binaries using renv'")
+system("wb resource resolve --name renv-cache || wb resource create gcs-bucket --name=renv-cache --cloning=COPY_NOTHING --description='Bucket for caching R package binaries using renv'")
 # Mount new resources
 system("wb resource mount")
 
